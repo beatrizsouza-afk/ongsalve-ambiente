@@ -3,146 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doação PIX - ONG Salve Meio-Ambiente</title>
   
-<title></title>
-		<style>
+  <style>
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* corpo e fundo da pagina */		
-/* padrão */
-		body {margin: 0;
-		font-family: Tahoma, sans-serif;
-		background-color: white;
-		color:black;
-		text-align:center;
-		font-size: 16px;
-		padding: 0;
-}	
-
-/* Tablets (até 1024px) */
-
-	@media screen and (max-width: 1024px) {
-    body {
-    font-size: 15px;
-  }
+html, body {
+  height: 100%;                  /* altura total */
+  display: flex;                 /* flexbox */
+  flex-direction: column;        /* organiza header, main, footer */
+  
+  font-family: Tahoma, sans-serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 16px;
 }
 
-/* Celulares grandes (até 768px) */
-	@media screen and (max-width: 768px) {
-    body {
-    font-size: 14px;
-  }
-}
+/* responsividade */
+@media screen and (max-width: 1024px) { body { font-size: 15px; } }
+@media screen and (max-width: 768px)  { body { font-size: 14px; } }
+@media screen and (max-width: 480px)  { body { font-size: 13px; } }
 
-/* Celulares pequenos (até 480px) */
-	@media screen and (max-width: 480px) {
-  	 body {
-    font-size: 13px;
-  }
-}
-
-
-		
 /* capa da pagina */	
-		header  {margin: 0; 
-		text-align: center;
-		padding:20px;
-		color:white;
+header {
+  margin: 0; 
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: rgb(85, 141, 85);
 }
 
-		nav, a {text-decoration:none; color:white;
-		background-color:rgb(85, 141, 85);
-		font-family:arial;
-
-		}
+nav, a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(85, 141, 85);
+  font-family: Arial;
+}
 
 /* rodapé da pagina */		
-		footer {background-color:rgb(85, 141, 85);
-		margin: 0; 
-		text-align: center;
-		padding:20px;
-		color:white;
-		font-size: 10px
+footer {
+  background-color: rgb(85, 141, 85);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 10px;
 }
-	
-	
+
 /* botões da pagina */	
-		button {color:white;
-		background-color:rgb(85, 141, 85);
-		font-family:arial;
-		border-radius: 5px;
-		border-color: rgb(107, 161, 107);
+button {
+  color: white;
+  background-color: rgb(85, 141, 85);
+  font-family: Arial;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
 }
-		#parabutton :hover{ background-color: rgb(85, 141, 85);
-		transition: 0.3s;
+button:hover {
+  background-color: rgb(65, 120, 65);
+  transition: 0.3s;
+}
+button a {
+  color: white;
+  text-decoration: none;
 }
 
 /* imagem do qr code */
-		img {width:17%;
-		border-radius: 10px;
-	
+img {
+  width: 17%;
+  border-radius: 10px;
 }
-		
-		
-	</style>
-			
-	
-		<body>
-		<header style="background-color:rgb(85, 141, 85)">
-    	<h1>ONG Salve Meio-Ambiente</h1>
 
-		</header> 
-		
-		 <nav style="background-color:rgb(85, 141, 85)">
-
-
-  		</nav> 
-
-		<main> 
-			
-			<h2>Doe via pix</h2>
-			<p>Você pode apontar a câmera do banco para o QR code ou copiar a chave abaixo e fazer a transferência.</p>
-
-    	<img src="qrcodepix.png" alt="QR Code da chave pix para a doação">
-
-		<h3> Chave PIX</h3>
-		<p id="pix">Contato@salvemeioambiente.org</p>
-
-		<input type="text" id="copiar" value="Contato@salvemeioambiente.org"> 
-		<button id="parabutton" onclick="CopiarTexto()">Copiar</button>
-
-    	<!-- (java script)copiar chave pix-->		
-		 <script>	
-		function CopiarTexto() {
-		const input= document.getElementById ("copiar");
-		//seleciona o conteúdo do input
-		input.select();
-        input.setSelectionRange(0, 99999);//para celular
-		navigator.clipboard.writeText(input.value).then(()=> {
-			alert ("Copiado para a área de transferência: " + input.value);
-		})
-		.catch (err => {
-        console.error("Erro ao copiar:", err);
-		});		
+/* main ocupa o espaço flexível */
+main {
+  flex: 1;
+  padding: 20px;
 }
-		 </script>	
-         
-		<h4>Obrigada pela sua doação!💚</h4>
-		<br> 
-		
-		<button type="button">
-  		<a href="index.html">Voltar</a>
-		
-		
-		</button>
-		
-		<br> <br> <br> <br> <br> <br> 
-		<br> <br> <br> <br> <br> <br>
-		<br>
-		
-		</main>
-		
-		<footer> 
-		<p>&copy; 2025 SALVE MEIO-AMBIENTE | All Rights reserved</p>
-		</footer>
-
-</body>
+  </style>
 </head>
+<body>
+  <header>
+    <h1>ONG Salve Meio-Ambiente</h1>
+  </header> 
+  
+  <nav></nav> 
+
+  <main> 
+    <h2>Doe via pix</h2>
+    <p>Você pode apontar a câmera do banco para o QR code ou copiar a chave abaixo e fazer a transferência.</p>
+
+    <img src="qrcodepix.png" alt="QR Code da chave pix para a doação">
+
+    <h3>Chave PIX</h3>
+    <p id="pix">Contato@salvemeioambiente.org</p>
+
+    <input type="text" id="copiar" value="Contato@salvemeioambiente.org"> 
+    <button id="parabutton" onclick="CopiarTexto()">Copiar</button>
+
+    <!-- (JavaScript) copiar chave pix -->		
+    <script>	
+      function CopiarTexto() {
+        const input = document.getElementById("copiar");
+        input.select();
+        input.setSelectionRange(0, 99999); // para celular
+        navigator.clipboard.writeText(input.value).then(()=> {
+          alert("Copiado para a área de transferência: " + input.value);
+        })
+        .catch(err => {
+          console.error("Erro ao copiar:", err);
+        });		
+      }
+    </script>	
+         
+    <h4>Obrigada pela sua doação! 💚</h4>
+    <br> 
+		
+    <button type="button">
+      <a href="index.html">Voltar</a>
+    </button>
+  </main>
+		
+  <footer> 
+    <p>&copy; 2025 SALVE MEIO-AMBIENTE | All Rights reserved</p>
+  </footer>
+</body>
+</html>
