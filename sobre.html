@@ -3,140 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre Nós</title>
-
-  <style> 
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* corpo */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-  color: black;
-  text-align: center;
-  font-size: 16px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-/* títulos */
-h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-h2 {
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-h3 {
-  font-size: 20px;
-  margin: 30px 0 15px 0;
-}
-
-/* header */
-header {
-  background-color: rgb(85, 141, 85);
-  text-align: center;
-  padding: 15px;
-  color: white;
-}
-
-/* vídeo responsivo */
-iframe {
-  max-width: 100%;
-  width: 560px;
-  height: 315px;
-  display: block;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* botões */
-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 15px;
-  color: white;
-  background-color: rgb(85, 141, 85);
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-button:hover {
-  background-color: rgb(65, 120, 65);
-}
-button a {
-  color: white;
-  text-decoration: none;
-}
-
-/* main flexível */
-main {
-  flex: 1;
-  padding: 20px;
-}
-
-/* footer */
-footer {
-  background-color: rgb(85, 141, 85);
-  text-align: center;
-  padding: 20px;
-  color: white;
-  font-size: 10px;
-}
-  </style>
-</head>
-<body>
-
-  <header> 
-    <h1>Sobre nós</h1> 
-  </header>
   
-  <main>
-    <section id="sobre">
-      <h2>Somos uma ONG dedicada à preservação do meio ambiente, promovendo ações sustentáveis e conscientização da sociedade.</h2>
-    </section> 
+<title></title>
+		<style>
+/* corpo e fundo da pagina */		
+/* padrão */
+		body {margin: 0;
+		font-family: Tahoma, sans-serif;
+		background-color: white;
+		color:black;
+		text-align:center;
+		font-size: 16px;
+		padding: 0;
+}	
 
-    <section>
-      <div class="sobrenos-conteiner">
-        <div class="sobre"><li>🌱 Reflorestamento</li></div>  
-        <div class="sobre"><li>♻️ Reciclagem</li></div> 
-        <div class="sobre"><li>🌍 Proteção à fauna e flora</li></div> 
-      </div>
-    </section>
+/* Tablets (até 1024px) */
 
-    <h3>Por que se preocupar tanto com o meio ambiente?<br>Veja o vídeo abaixo para saber mais:</h3>
+	@media screen and (max-width: 1024px) {
+    body {
+    font-size: 15px;
+  }
+}
 
-    <!-- vídeo -->
-    <iframe 
-      src="https://www.youtube.com/embed/UM9PVk-olVc?si=9BvICr0_Uh9T0UVY"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    </iframe>
+/* Celulares grandes (até 768px) */
+	@media screen and (max-width: 768px) {
+    body {
+    font-size: 14px;
+  }
+}
 
-    <button type="button">
-      <a href="index.html">Voltar</a>
-    </button>
-  </main>
+/* Celulares pequenos (até 480px) */
+	@media screen and (max-width: 480px) {
+  	 body {
+    font-size: 13px;
+  }
+}
 
-  <footer> 
-    <p>&copy; 2025 SALVE MEIO-AMBIENTE | All Rights reserved</p>
-  </footer>
+
+		
+/* capa da pagina */	
+		header  {margin: 0; 
+		text-align: center;
+		padding:20px;
+		color:white;
+}
+
+		nav, a {text-decoration:none; color:white;
+		background-color:rgb(85, 141, 85);
+		font-family:arial;
+
+		}
+
+/* rodapé da pagina */		
+		footer {background-color:rgb(85, 141, 85);
+		margin: 0; 
+		text-align: center;
+		padding:20px;
+		color:white;
+		font-size: 10px
+}
+	
+	
+/* botões da pagina */	
+		button {color:white;
+		background-color:rgb(85, 141, 85);
+		font-family:arial;
+		border-radius: 5px;
+		border-color: rgb(107, 161, 107);
+}
+		#parabutton :hover{ background-color: rgb(85, 141, 85);
+		transition: 0.3s;
+}
+
+/* imagem do qr code */
+		img {width:17%;
+		border-radius: 10px;
+	
+}
+		
+		
+	</style>
+</head>	
+	
+		<body>
+		<header style="background-color:rgb(85, 141, 85)">
+    	<h1>ONG Salve Meio-Ambiente</h1>
+
+		</header> 
+		
+		 <nav style="background-color:rgb(85, 141, 85)">
+
+
+  		</nav> 
+
+		<main> 
+			
+			<h2>Doe via pix</h2>
+			<p>Você pode apontar a câmera do banco para o QR code ou copiar a chave abaixo e fazer a transferência.</p>
+
+    	<img src="qrcodepix.png" alt="QR Code da chave pix para a doação">
+
+		<h3> Chave PIX</h3>
+		<p id="pix">Contato@salvemeioambiente.org</p>
+
+		<input type="text" id="copiar" value="Contato@salvemeioambiente.org"> 
+		<button id="parabutton" onclick="CopiarTexto()">Copiar</button>
+
+    	<!-- (java script)copiar chave pix-->		
+		 <script>	
+		function CopiarTexto() {
+		const input= document.getElementById ("copiar");
+		//seleciona o conteúdo do input
+		input.select();
+        input.setSelectionRange(0, 99999);//para celular
+		navigator.clipboard.writeText(input.value).then(()=> {
+			alert ("Copiado para a área de transferência: " + input.value);
+		})
+		.catch (err => {
+        console.error("Erro ao copiar:", err);
+		});		
+}
+		 </script>	
+         
+		<h4>Obrigada pela sua doação!💚</h4>
+		<br> 
+		
+		<button type="button">
+  		<a href="index.html">Voltar</a>
+		
+		
+		</button>
+		
+		<br> <br> <br> <br> <br> <br> 
+		<br> <br> <br> <br> <br> <br>
+		<br>
+		
+		</main>
+		
+		<footer> 
+		<p>&copy; 2025 SALVE MEIO-AMBIENTE | All Rights reserved</p>
+		</footer>
 
 </body>
 </html>
+ 
