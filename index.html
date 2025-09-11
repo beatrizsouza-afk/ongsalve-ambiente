@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALVE MEIO-AMBIENTE</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+
+  <header class="cabecalho-img">
+    <div >
+
+	<h1>SALVE<br> MEIO-AMBIENTE</h1>
+	</div>
+
+	 <nav>
+	 <a href="#doacao">Doação</a> </button>
+
+	<a href="sobre.html">Sobre</a> </button>
+
+	<a href="#contato">Contato</a>
+
+  </nav> 
+	
+   </header>
+
+<main>
+
+		<p id="parainicio"> Uma ONG voltada para o meio ambiente é fundamental para proteger a natureza, promover a sustentabilidade e garantir qualidade de vida para as futuras gerações. <br> <br>
+		Ela atua na preservação de florestas, rios e animais, além de conscientizar a sociedade sobre a importância de cuidar do planeta. <br>
+		<br>
+	 Faça parte dessa mudança. 🌍 </p>
+
+  <section style="background-color: #ABC2AB" class="galeria">
+    <h2>Tipos de doação</h2>
+	<figure>
+      <figcaption class="legenda-topo"> Trabalho Voluntário</figcaption>
+        <img src="imagem 6.jpg" alt="Trabalho Voluntário">
+			<figcaption  class="legenda-baixo"> O voluntariado é uma doação valiosa. Ao dedicar tempo e
+				 habilidades, cada pessoa contribui diretamente para projetos de preservação e educação ambiental. </figcaption>     
+	</figure>
+
+      	<figure>
+      <figcaption class="legenda-topo">Doação de Recursos</figcaption>
+        <img src="imagem 5.jpg" alt="Doação de Recursos">
+			<figcaption  class="legenda-baixo">Doar materiais e equipamentos é uma forma prática de apoiar a ONG. 
+				Papéis, plásticos, alimentos ou até ferramentas ajudam nas atividades diárias e 
+				fortalecem as ações ambientais.</figcaption>     
+		</figure>
+
+      <figure>
+		 <figcaption class="legenda-topo">Doação Financeira</figcaption>
+        <img src="imagem 1.jpg" alt="Doação Financeira">
+ 			<figcaption class="legenda-baixo">As doações online tornam a contribuição rápida e acessível. Com apenas 
+				alguns cliques, qualquer pessoa pode apoiar a causa.</figcaption>
+				</figure>
+   
+  
+	</section>
+
+  <section id="doacao">
+  <h3>Doação Financeira</h3>
+  <p>Dados Pessoais</p>
+
+  <form id="doacaoForm">
+    <label for="cpf">CPF/CNPJ:</label>
+    <input type="text" id="cpf" name="CPF_CNPJ" placeholder="000.000.000-00" required>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="Nome" placeholder="Digite seu nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="Email" placeholder="Digite seu e-mail" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="Telefone" placeholder="(00) 00000-0000" required>
+
+    <label for="metodo">Forma de pagamento:</label>
+    <select id="metodo" name="Metodo">
+      <option value="PIX">PIX</option>
+    </select>
+
+    <button type="submit">Ajudar</button>
+  </form>
+</section>
+
+<script>//JAVA SCRIPT
+document.getElementById("doacaoForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // impede o envio padrão
+
+  const formData = new FormData(this);
+  formData.append("Created", "x-sheetmonkey-current-date-time");
+
+  fetch("https://api.sheetmonkey.io/form/qD1VxXZ8ppLfnUYGuhZiVm", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      // Redireciona após sucesso
+      window.location.href = "agradecimento_e_pix.html";
+    } else {
+      alert("Ocorreu um erro ao enviar. Tente novamente.");
+    }
+  })
+  .catch(error => {
+    console.error("Erro:", error);
+    alert("Erro de conexão. Tente novamente.");
+  });
+});
+</script>
+
+  <section style="background-color: #ABC2AB" id="contato">
+    <h2 id="paracontato">Contato</h2>
+    <p id="paracontato"> Entre em contato conosco: </p>
+ <table>
+    <tr> 
+      <th>CANAL </th>  
+     <th>INFORMAÇÃO </th>  
+        </tr>
+        <tr> 
+          <td> Email</td>
+        <td>Contato@salvemeioambiente.org </td>
+        </tr>
+        <tr> 
+            <td> Telefone </td>
+            <td> (79) 99999-9999 </td>
+            </tr>
+            <tr> 
+                <td> Endereço </td>
+                  <td>Fictício, 013-ARACAJU/SE</td>
+            </tr>
+    </table>
+  </section>
+
+</main>
+
+<footer id="parafooter"> 
+<p>&copy; 2025 SALVE MEIO-AMBIENTE | All Rights reserved</p>
+</footer>
+
+
+</body>
+</html>
+
