@@ -48,10 +48,15 @@ header {
 }
 
 /* títulos */
-h1 { font-size: 50px; text-align: center; }
-h3 { font-size: 20px; }
+h1 { font-size: 50px; text-align: center; 
+   }
+h3 { font-size: 20px; 
+    color: white
+   }
 .galeria h2 { color: white; font-size: 28px; margin-bottom: 30px; }
-
+p {color:white
+    
+}
 /* navegaçao */
 nav {
     display: flex;
@@ -95,7 +100,9 @@ section {
 
 /* tipos de doaçao */
 #para_apoie { color: white; font-size: 30px; }
-#paratitulo_apoie { color: white; font-weight: bold; font-size: 25px; }
+#paratitulo_apoie { color: white; font-weight: bold; 
+font-size: 25px; 
+}
 .apoie-container {
     display: flex;
     flex-wrap: wrap;
