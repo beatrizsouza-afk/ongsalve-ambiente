@@ -50,11 +50,11 @@ header {
 /* títulos */
 h1 { font-size: 50px; text-align: center; 
    }
-.doacao h3 { font-size: 20px; 
+.contato h3 { font-size: 20px; 
     color: white
    }
 .galeria h2 { color: white; font-size: 28px; margin-bottom: 30px; }
-.doacao p {color:white
+.contato p {color:white
     
 }
 /* navegaçao */
