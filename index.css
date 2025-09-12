@@ -113,7 +113,7 @@ font-size: 25px;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    width: 100%;
+    width: 50%;
     max-width: 100%;
 }
 
@@ -129,7 +129,7 @@ font-size: 25px;
 }
 .galeria figure {
     text-align: center;
-    max-width: 50%;
+    max-width: 100%;
 }
 .legenda-topo { font-size: 14px; font-weight: bold; margin-bottom: 8px; color: white; }
 .legenda-baixo { font-size: 13px; margin-top: 8px; color: white; }
