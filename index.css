@@ -54,7 +54,7 @@ h3 { font-size: 20px;
     color: white
    }
 .galeria h2 { color: white; font-size: 28px; margin-bottom: 30px; }
- h4 {font-size:30px; }
+ h4, p {font-size:30px; color:white; }
 
     
 }
