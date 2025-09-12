@@ -18,7 +18,10 @@ html, body {
 }
 
 /* responsivide */
-@media screen and (max-width: 1024px) { body { font-size: 15px; } }
+@media screen and (max-width: 1024px){section img, .galeria img, figure img {
+    max-width:400px;
+}    
+} { body { font-size: 15px; } }
 @media screen and (max-width: 768px)  { body { font-size: 14px; } }
 @media screen and (max-width: 480px)  { body { font-size: 13px; } }
 
@@ -192,8 +195,10 @@ button, .apoie button {
 }
 
 /* imagens */
-img{
-    max-width: 100%;
+section img, .galeira img, figure img{
+    max-width: 300px;
     height: auto;
     display: block;
+    margin: 0 auto;
+    border-radius: 5px;
 }
